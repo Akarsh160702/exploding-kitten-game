@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--   <title>Emitter Leaderboard with Redis - README</title> -->
-<!--   <style>
+  <title>Emitter Leaderboard with Redis - README</title>
+  <style>
     body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
     h1, h2 { color: #007acc; }
     code { background-color: #f4f4f4; padding: 0.2em 0.4em; border-radius: 4px; }
     pre { background-color: #f4f4f4; padding: 1em; border-radius: 5px; overflow-x: auto; }
     ul { margin-left: 1em; }
     .section { margin-bottom: 2em; }
-  </style> -->
+  </style>
 </head>
 <body>
 
@@ -60,11 +60,16 @@ cd Emitter-Leaderboard</code></pre>
 node server.js</code></pre>
 
   <h3>5. Access the Application</h3>
-  <p>Open your browser and go to:</p>
+  <p>Open your browser and go to the local URL:</p>
   <pre><code>http://localhost:3000</code></pre>
   <p>or the port specified in your project configuration. Once there, you should see the application up and running.</p>
+  
+  <p>Alternatively, access the live deployment at:</p>
+  <a href="https://exploding-kitten-1607.netlify.app/" target="_blank">https://exploding-kitten-1607.netlify.app/</a>
+</div>
 
-  <h3>6. Build for Production</h3>
+<div class="section">
+  <h2>Build for Production</h2>
   <p>To create a production-ready build of the application, run:</p>
   <pre><code>npm run build</code></pre>
   <p>This command bundles the application using Vite, making it ready for deployment.</p>
