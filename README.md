@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emitter Leaderboard with Redis - README</title>
+<!--   <title>Emitter Leaderboard with Redis - README</title> -->
 <!--   <style>
     body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
     h1, h2 { color: #007acc; }
