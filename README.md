@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emitter Leaderboard with Redis - README</title>
-  <style>
+<!--   <style>
     body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
     h1, h2 { color: #007acc; }
     code { background-color: #f4f4f4; padding: 0.2em 0.4em; border-radius: 4px; }
     pre { background-color: #f4f4f4; padding: 1em; border-radius: 5px; overflow-x: auto; }
     ul { margin-left: 1em; }
     .section { margin-bottom: 2em; }
-  </style>
+  </style> -->
 </head>
 <body>
 
