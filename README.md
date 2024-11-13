@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<h1>Emitter Leaderboard with Redis</h1>
+<h1>Emitter Leaderboard</h1>
 
 <div class="section">
   <h2>Overview</h2>
