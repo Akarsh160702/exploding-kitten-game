@@ -5,7 +5,7 @@
     <title>Exploding Kittens Game Project</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -24,32 +24,44 @@
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
         }
         .content {
             padding: 20px;
             background: #fff;
             margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .prerequisites, .installation, .usage, .contributing {
+        section {
             margin-bottom: 20px;
         }
-        h1, h2, h3 {
+        h2, h3 {
             color: #333;
         }
-        ul {
+        ul, ol {
             list-style: none;
             padding: 0;
         }
-        ul li {
+        ul li, ol li {
             background: #f4f4f9;
             margin: 5px 0;
             padding: 10px;
             border: #ccc 1px solid;
+            border-radius: 5px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -94,23 +106,18 @@
         </section>
         <section class="usage">
             <h2>Usage</h2>
-            <h3>Running the Backend</h3>
             <ol>
-                <li>Start Redis server:
+                <li>Navigate to the `Frontend` directory and start the development server:
+                    <pre><code>npm run dev</code></pre>
+                </li>
+                <li>Open a new terminal and start the Redis server:
                     <pre><code>redis-server</code></pre>
                 </li>
-                <li>Run the Go server:
-                    <pre><code>go run main.go</code></pre>
-                </li>
-                <li>Run the Node.js server:
+                <li>Open another terminal, navigate to the `Backend` directory, and run the Node.js server:
                     <pre><code>node server.js</code></pre>
                 </li>
-            </ol>
-            <h3>Running the Frontend</h3>
-            <ol>
-                <li>Navigate to the `Frontend` directory.</li>
-                <li>Run the development server:
-                    <pre><code>npm run dev</code></pre>
+                <li>Open a final terminal and run the Go server:
+                    <pre><code>go run main.go</code></pre>
                 </li>
             </ol>
         </section>
