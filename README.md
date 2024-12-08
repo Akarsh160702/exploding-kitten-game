@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!--     <title>Exploding Kittens Game Project</title>
+    <title>Exploding Kittens Game Project</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,7 +63,7 @@
             border-radius: 5px;
             overflow-x: auto;
         }
-    </style> -->
+    </style>
 </head>
 <body>
     <header>
@@ -82,6 +82,7 @@
                 <li>Node.js - <a href="https://nodejs.org/en/download/">Download and Install Node.js</a></li>
                 <li>Go - <a href="https://golang.org/dl/">Download and Install Go</a></li>
                 <li>Redis - <a href="https://redis.io/download">Download and Install Redis</a></li>
+                <li>64-bit MinGW - Follow the <a href="#mingw-installation">installation steps below</a></li>
             </ul>
         </section>
         <section class="installation">
@@ -119,6 +120,15 @@
                 <li>Open a final terminal and run the Go server:
                     <pre><code>go run main.go</code></pre>
                 </li>
+            </ol>
+        </section>
+        <section id="mingw-installation">
+            <h2>64-bit MinGW Installation</h2>
+            <ol>
+                <li>Go to the following link: <a href="https://github.com/niXman/mingw-builds-binaries/releases">MinGW Builds Binaries</a></li>
+                <li>Download `x86_64-14.2.0-release-mcf-seh-ucrt-rt_v12-rev0.7z`.</li>
+                <li>Extract the zip file and copy the `mingw64` folder to the `C:/` directory.</li>
+                <li>Add `C:\mingw64\bin` to your environment variables.</li>
             </ol>
         </section>
         <section class="contributing">
