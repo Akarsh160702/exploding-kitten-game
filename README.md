@@ -6,10 +6,8 @@
 </head>
 <body>
     <h1 style="text-align: center; color: #333;">Exploding Kittens Game Project</h1>
-
     <h2>Project Overview</h2>
     <p>This project is a web-based game called "Exploding Kittens". It consists of a frontend built with modern web technologies and a backend powered by Go and Node.js, with Redis and SQLite for data storage.</p>
-
     <h2>Prerequisites</h2>
     <ul>
         <li><strong>Node.js</strong>: <a href="https://nodejs.org/en/download/" target="_blank">Download and Install Node.js</a></li>
@@ -17,7 +15,6 @@
         <li><strong>Redis</strong>: <a href="https://redis.io/download" target="_blank">Download and Install Redis</a></li>
         <li><strong>64-bit MinGW</strong>: Follow the <a href="#mingw-installation">installation steps below</a></li>
     </ul>
-
     <h2>Installation</h2>
     <h3>Backend Setup</h3>
     <ol>
@@ -29,7 +26,6 @@
             <pre><code>npm install</code></pre>
         </li>
     </ol>
-
     <h3>Frontend Setup</h3>
     <ol>
         <li>Navigate to the <code>Frontend</code> directory.</li>
@@ -37,7 +33,6 @@
             <pre><code>npm install</code></pre>
         </li>
     </ol>
-
     <h2>Usage</h2>
     <ol>
         <li>Navigate to the <code>Frontend</code> directory and start the development server:
@@ -53,7 +48,6 @@
             <pre><code>go run main.go</code></pre>
         </li>
     </ol>
-
     <h2 id="mingw-installation">64-bit MinGW Installation</h2>
     <ol>
         <li>Go to the following link: <a href="https://github.com/niXman/mingw-builds-binaries/releases" target="_blank">MinGW Builds Binaries</a></li>
