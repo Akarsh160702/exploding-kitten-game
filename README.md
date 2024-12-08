@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Exploding Kittens Game Project</title>
+<!--     <title>Exploding Kittens Game Project</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,7 +63,7 @@
             border-radius: 5px;
             overflow-x: auto;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <header>
