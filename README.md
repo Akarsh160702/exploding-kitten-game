@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <h1 style="text-align: center; color: #333;">Exploding Kittens Game Project</h1>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="https://exploding-kitten-1607.netlify.app/" target="_blank" style="font-size: 20px; color: #0066cc; text-decoration: none; border: 2px solid #0066cc; padding: 10px 20px; border-radius: 5px; display: inline-block;">
+            🌐 View Live Deployment: Exploding Kittens Game
+        </a>
+    </div>
+    <h1 style="text-align: center; color: #333; margin-top: 40px;">Exploding Kittens Game Project</h1>
     <h2>Project Overview</h2>
     <p>This project is a web-based game called "Exploding Kittens". It consists of a frontend built with modern web technologies and a backend powered by Go and Node.js, with Redis and SQLite for data storage.</p>
     <h2>Prerequisites</h2>
