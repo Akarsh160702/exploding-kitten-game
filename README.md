@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Exploding Kittens Game Project</title>
 </head>
 <body>
     <h1 style="text-align: center; color: #333;">Exploding Kittens Game Project</h1>
@@ -55,7 +54,6 @@
         <li>Extract the zip file and copy the <code>mingw64</code> folder to the <code>C:/</code> directory.</li>
         <li>Add <code>C:\mingw64\bin</code> to your environment variables.</li>
     </ol>
-
     <h2>Contributing</h2>
     <p>We welcome contributions! Please fork the repository and submit a pull request for review.</p>
 </body>
