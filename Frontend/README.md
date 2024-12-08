@@ -1,107 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--   <title>Emitter Leaderboard with Redis - README</title> -->
-<!--   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-    h1, h2 { color: #007acc; }
-    code { background-color: #f4f4f4; padding: 0.2em 0.4em; border-radius: 4px; }
-    pre { background-color: #f4f4f4; padding: 1em; border-radius: 5px; overflow-x: auto; }
-    ul { margin-left: 1em; }
-    .section { margin-bottom: 2em; }
-  </style> -->
+    <meta charset="UTF-8">
 </head>
 <body>
-
-<h1>Emitter Leaderboard with Redis</h1>
-
-<div class="section">
-  <h2>Overview</h2>
-  <p>This project is a full-stack application built with Node.js, TypeScript, and Vite. It incorporates Redis for efficient data handling and caching, making it ideal for leaderboard functionalities and real-time data management.</p>
-</div>
-
-<div class="section">
-  <h2>Features</h2>
-  <ul>
-    <li><strong>Real-time Leaderboard</strong>: Updates in real-time to reflect the latest scores.</li>
-    <li><strong>Redis Caching</strong>: Implements Redis for high-speed data retrieval and storage.</li>
-    <li><strong>Scalable Architecture</strong>: Designed to be scalable with a full-stack setup.</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Prerequisites</h2>
-  <p>Ensure you have the following software installed:</p>
-  <ul>
-    <li><a href="https://nodejs.org/">Node.js</a> (version 14 or above)</li>
-    <li><a href="https://redis.io/download">Redis</a></li>
-    <li><a href="https://git-scm.com/">Git</a></li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Getting Started</h2>
-  <p>Follow these steps to set up and run the application on your local system.</p>
-
-  <h3>1. Clone the Repository</h3>
-  <pre><code>git clone &lt;repository-url&gt;
-cd Emitter-Leaderboard</code></pre>
-
-  <h3>2. Install Dependencies</h3>
-  <pre><code>npm install</code></pre>
-
-  <h3>3. Start the Frontend Development Server</h3>
-  <pre><code>npm run dev</code></pre>
-
-  <h3>4. Start the Backend Server</h3>
-  <pre><code>cd backend
-node server.js</code></pre>
-
-  <h3>5. Access the Application</h3>
-  <p>Open your browser and go to the local URL:</p>
-  <pre><code>http://localhost:3000</code></pre>
-  <p>or the port specified in your project configuration. Once there, you should see the application up and running.</p>
-  
-  <p>Alternatively, access the live deployment at:</p>
-  <a href="https://exploding-kitten-1607.netlify.app/" target="_blank">https://exploding-kitten-1607.netlify.app/</a>
-</div>
-
-<div class="section">
-  <h2>Build for Production</h2>
-  <p>To create a production-ready build of the application, run:</p>
-  <pre><code>npm run build</code></pre>
-  <p>This command bundles the application using Vite, making it ready for deployment.</p>
-</div>
-
-<div class="section">
-  <h2>Project Structure</h2>
-  <p>An overview of the main files and folders in this project:</p>
-  <ul>
-    <li><strong>index.html</strong> - Main HTML file for the frontend.</li>
-    <li><strong>vite.config.ts</strong> - Configuration file for Vite.</li>
-    <li><strong>tsconfig.json</strong> - TypeScript configuration.</li>
-    <li><strong>package.json</strong> - Contains project metadata, scripts, and dependencies.</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Additional Configuration</h2>
-  <p>This project includes configurations for:</p>
-  <ul>
-    <li><strong>ESLint</strong>: For maintaining code quality.</li>
-    <li><strong>PostCSS</strong> and <strong>TailwindCSS</strong>: For utility-first CSS styling.</li>
-  </ul>
-  <p>You can customize these configurations in the respective files: <code>.eslintrc.js</code>, <code>postcss.config.js</code>, and <code>tailwind.config.js</code>.</p>
-</div>
-
-<div class="section">
-  <h2>Contributing</h2>
-  <p>We welcome contributions! To contribute, please fork this repository, make your changes, and submit a pull request.</p>
-</div>
-
-<p>Thank you for checking out the Emitter Leaderboard project! We hope you find it useful and enjoyable to work with.</p>
-
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="https://exploding-kitten-1607.netlify.app/" target="_blank" style="font-size: 20px; color: #0066cc; text-decoration: none; border: 2px solid #0066cc; padding: 10px 20px; border-radius: 5px; display: inline-block;">
+            🌐 View Live Deployment: Exploding Kittens Game
+        </a>
+    </div>
+    <h1 style="text-align: center; color: #333; margin-top: 40px;">Exploding Kittens Game Project</h1>
+    <h2>Project Overview</h2>
+    <p>This project is a web-based game called "Exploding Kittens". It consists of a frontend built with modern web technologies and a backend powered by Go and Node.js, with Redis and SQLite for data storage.</p>
+    <h2>Prerequisites</h2>
+    <ul>
+        <li><strong>Node.js</strong>: <a href="https://nodejs.org/en/download/" target="_blank">Download and Install Node.js</a></li>
+        <li><strong>Go</strong>: <a href="https://golang.org/dl/" target="_blank">Download and Install Go</a></li>
+        <li><strong>Redis</strong>: <a href="https://redis.io/download" target="_blank">Download and Install Redis</a></li>
+        <li><strong>64-bit MinGW</strong>: Follow the <a href="#mingw-installation">installation steps below</a></li>
+    </ul>
+    <h2>Installation</h2>
+    <h3>Backend Setup</h3>
+    <ol>
+        <li>Navigate to the <code>Backend</code> directory.</li>
+        <li>Install Go dependencies:
+            <pre><code>go mod tidy</code></pre>
+        </li>
+        <li>Install Node.js dependencies:
+            <pre><code>npm install</code></pre>
+        </li>
+    </ol>
+    <h3>Frontend Setup</h3>
+    <ol>
+        <li>Navigate to the <code>Frontend</code> directory.</li>
+        <li>Install Node.js dependencies:
+            <pre><code>npm install</code></pre>
+        </li>
+    </ol>
+    <h2>Usage</h2>
+    <ol>
+        <li>Navigate to the <code>Frontend</code> directory and start the development server:
+            <pre><code>npm run dev</code></pre>
+        </li>
+        <li>Open a new terminal and start the Redis server:
+            <pre><code>redis-server</code></pre>
+        </li>
+        <li>Open another terminal, navigate to the <code>Backend</code> directory, and run the Node.js server:
+            <pre><code>node server.js</code></pre>
+        </li>
+        <li>Open a final terminal and run the Go server:
+            <pre><code>go run main.go</code></pre>
+        </li>
+    </ol>
+    <h2 id="mingw-installation">64-bit MinGW Installation</h2>
+    <ol>
+        <li>Go to the following link: <a href="https://github.com/niXman/mingw-builds-binaries/releases" target="_blank">MinGW Builds Binaries</a></li>
+        <li>Download <code>x86_64-14.2.0-release-mcf-seh-ucrt-rt_v12-rev0.7z</code>.</li>
+        <li>Extract the zip file and copy the <code>mingw64</code> folder to the <code>C:/</code> directory.</li>
+        <li>Add <code>C:\mingw64\bin</code> to your environment variables.</li>
+    </ol>
+    <h2>Contributing</h2>
+    <p>We welcome contributions! Please fork the repository and submit a pull request for review.</p>
 </body>
 </html>
